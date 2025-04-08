@@ -15,6 +15,10 @@ struct LandmarkRow: View {
             Text(landmark.name)
                 .bold()
             Spacer()
+            if landmark.isFavorite{
+                Image(systemName: "star.fill")
+                    .foregroundStyle(.yellow)
+            }
             }
     }
 }
